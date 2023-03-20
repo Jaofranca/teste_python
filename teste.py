@@ -7,7 +7,6 @@ text_without_punctuation = lowerText.translate(str.maketrans('', '', string.punc
 words_dict = {}
 
 for word in text_without_punctuation.split():
-  values = words_dict.values()
   if word in words_dict:
     words_dict[word] += 1
   else:
